@@ -6,8 +6,6 @@ import json
 from groq_response import groq_response
 import streamlit.components.v1 as components
 import requests
-from youtube_transcript_api import YouTubeTranscriptApi
-from youtubesearchpython import VideosSearch
 import os
 import queue
 import re
