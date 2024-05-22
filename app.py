@@ -16,10 +16,9 @@ authenticator = stauth.Authenticate(
 authenticator.login()
 if st.session_state["authentication_status"]:
     authenticator.logout()
-    st.write(f'Welcome *{st.session_state["to Studium"]}*')
-    st.title('You have successfully logged in')
+    st.write(f'Welcome *{st.session_state["name"]}*')
+    st.title('You have successfully logged in 🥳')
 elif st.session_state["authentication_status"] is False:
     st.error('Username/password is incorrect')
 elif st.session_state["authentication_status"] is None:
     st.warning('Please enter your username and password')
-  
